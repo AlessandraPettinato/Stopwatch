@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Share Tech Mono', monospace;
+    color: #555555;
+    font-size: 1.3rem;
+}
+
+body {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.stopwatch-container, .buttons-container, .laps-container {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin: 1rem;
+}
+
+.stopwatch-container > span {
+    margin: 0.5rem;
+}
+
+#seconds, #minutes {
+    font-size: 4rem;
+}
+
+#milliseconds {
+    font-size: 2rem;
+}
+
+#laps-count, #laps-time, #laps-total-time {
+    display: flex;
+    flex-flow: column;
+    flex-direction: column-reverse;
+    align-items: center;
+    line-height: 1.5;
+}
+
+.break {
+    margin-top: 2rem;
+    width: 600px;
+    height: 30px;
+    background: #e5e5e5;
+}
+
+p {
+    text-align: center;
+}
+
+.buttons-container > button {
+    margin: 0.5rem;
+}
+
+button {
+    font-size: 1rem;
+    width: 100px;
+    height: 50px;
+    color: #ffffff;
+    background-color: #0090dd;
+}
+
+button:nth-child(2) {
+    background-color: #0090dd;
+}
+
+button:nth-child(3) {
+    background-color: #ef6262;
+}
+
+ul, li {
+    list-style-type: none;
+}
+
+.laps-container > div {
+    margin: 2rem;
+}
+
