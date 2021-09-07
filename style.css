@@ -131,4 +131,57 @@ li {
 }
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+	body {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 2fr;
+	}
+
+	.stopwatch-container {
+		grid-row: 1;
+		height: 400px;
+		width: 400px;
+	}
+
+	#seconds,
+	#minutes,
+	#milliseconds {
+		font-size: 3rem;
+	}
+
+	.buttons-container {
+		grid-column: 1;
+		grid-row: 2;
+	}
+
+	button {
+		width: 200px;
+		height: 200px;
+		font-size: 1.8rem;
+	}
+
+	.buttons-container > button {
+		margin: 1.5rem;
+	}
+
+	.break,
+	.laps-container {
+		grid-row: 3;
+	}
+
+	.break {
+		margin-top: 1rem;
+	}
+
+	ul,
+	li {
+		font-size: 2rem;
+	}
+
+	.column-lap {
+		min-width: 180px;
+	}
+
+	.lap-caption {
+		font-size: 2rem;
+	}
 }
