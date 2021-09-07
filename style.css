@@ -131,6 +131,10 @@ li {
 }
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+	* {
+		margin: 8px;
+	}
+
 	body {
 		grid-template-columns: 1fr;
 		grid-template-rows: 1fr 1fr 2fr;
@@ -178,7 +182,7 @@ li {
 	}
 
 	.column-lap {
-		min-width: 180px;
+		min-width: 185px;
 	}
 
 	.lap-caption {
