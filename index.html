@@ -8,30 +8,32 @@
 <body>
 
 <div class="stopwatch-container">
-    <span id="minutes">00</span>:<span id="seconds">00</span>.<span id="milliseconds">00</span>
+    <p id="span-container">
+ <span id="minutes">00</span>:<span id="seconds">00</span>.<span id="milliseconds">00</span>
+</p>
 </div>
 
 <div class="buttons-container">
     <button id="start-stop" onclick="startStopwatch()">start</button>
-    <button id="lap" onclick="setLap()">lap</button>
-    <button id="reset" onclick="setReset()">reset</button>
+    <button id="lap" onclick="setLap()" disabled>lap</button>
+    <button id="reset" onclick="setReset()" disabled>reset</button>
 </div>
 
 <div class="break"></div>
 
 <div class="laps-container">
-    <div>
-        <p> LAP</p>
+    <div class="column-lap">
+        <p class="lap-caption"> LAP</p>
         <ul id="laps-count">
         </ul>
-    </div>
-    <div>
-        <p> TIME</p>
+    </div >
+    <div class="column-lap">
+        <p class="lap-caption"> TIME</p>
         <ul id="laps-time">
         </ul>
     </div>
-    <div>
-        <p> TOTAL TIME</p>
+    <div class="column-lap">
+        <p class="lap-caption"> TOTAL TIME</p>
         <ul id="laps-total-time">
         </ul>
     </div>
