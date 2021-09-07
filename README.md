@@ -15,5 +15,5 @@
 A simple Stopwatch made with HTML & CSS.
 JavaScript was used to manipulate the DOM and make the interaction with the app possible.
 
-Whit this Stopwatch can start the counter, stop it, set laps and reset it.
-At every lap, the stopwatch records either the total time and the difference between it and the moment we set the lap.
+This Stopwatch is able to start a counter, stop it, set laps and reset it.
+At every lap, the stopwatch records either the total time and the difference between it and the moment the lap is set.
