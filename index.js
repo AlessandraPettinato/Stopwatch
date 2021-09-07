@@ -94,7 +94,7 @@ const printLap = () => {
 
 const startStopwatch = () => {
 	if (hasStopped) {
-		interval = setInterval(stopwatch, 1);
+		interval = setInterval(stopwatch, 10);
 		document.getElementById("start-stop").innerHTML = "stop";
 		document.getElementById("lap").disabled = false;
 		document.getElementById("lap").style.backgroundColor = "#22031f";
