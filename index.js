@@ -50,19 +50,17 @@ let displayTime;
 let catchTime;
 
 const catchLap = (array) => {
-	let lastTimeToMilli;
-	let secondLastToMilli;
+	let lastTimeInArray;
+	let secondLastTimeInArray;
 	let calculateTimeInSeconds;
 	let rest;
 
 	if (array.length === 1) {
 		displayTime = array[0];
 	} else {
-		lastTimeToMilli = convertToMilliSeconds(array[array.length - 1]);
-		secondLastToMilli = convertToMilliSeconds(array[array.length - 2]);
-		calculateTimeInSeconds = (lastTimeToMilli - secondLastToMilli) / 1000;
-
-		console.log(lastTimeToMilli, secondLastToMilli, calculateTimeInSeconds);
+		lastTimeInArray = convertToMilliSeconds(array[array.length - 1]);
+		secondLastTimeInArray = convertToMilliSeconds(array[array.length - 2]);
+		calculateTimeInSeconds = (lastTimeInArray - secondLastTimeInArray) / 1000;
 
 		rest = Math.trunc(calculateTimeInSeconds) % 60;
 		displayTime =
@@ -126,7 +124,6 @@ const setLap = () => {
 		seconds
 	)}.${getPaddedNumber(centi)}`;
 	lapsArray.push(catchTime);
-	console.log(lapsArray);
 	printLap(catchTime);
 };
 
