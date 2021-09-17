@@ -1,6 +1,6 @@
 # Stopwatch
 
-![](https://res.cloudinary.com/dg5lakmem/image/upload/v1631042706/Untitled_design_3_pehefe.svg)
+![](https://res.cloudinary.com/dg5lakmem/image/upload/v1631872310/Untitled_design_1_vebvet.png)
 
 #### Built with
 
