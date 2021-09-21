@@ -104,6 +104,7 @@ button {
 	border-color: #b85769;
 	color: #b85769;
 	background-color: #22031f;
+	cursor: pointer;
 }
 
 button:nth-child(2),
@@ -133,7 +134,7 @@ li {
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
 	body {
 		grid-template-columns: 1fr;
-		grid-template-rows: 1fr 0.5fr 2fr;
+		grid-template-rows: 1fr 0.5fr 0.5fr;
 	}
 
 	.stopwatch-container {
@@ -173,6 +174,7 @@ li {
 	.laps-container {
 		grid-column: 1;
 		grid-row: 3;
+		margin-top: 4rem;
 	}
 
 	.laps-container > div {
