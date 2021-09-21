@@ -93,7 +93,7 @@ const printLap = () => {
 const startStopwatch = () => {
 	if (hasStopped) {
 		interval = setInterval(stopwatch, 10);
-		document.getElementById("start-stop").innerHTML = "stop";
+		document.getElementById("start-stop").innerHTML = "STOP";
 		document.getElementById("lap").disabled = false;
 		document.getElementById("lap").style.backgroundColor = "#22031f";
 		document.getElementById("reset").disabled = false;
@@ -101,7 +101,7 @@ const startStopwatch = () => {
 		hasStopped = false;
 	} else {
 		clearInterval(interval);
-		document.getElementById("start-stop").innerHTML = "start";
+		document.getElementById("start-stop").innerHTML = "START";
 
 		lapsCount++;
 		catchTime = `${getPaddedNumber(minutes)}:${getPaddedNumber(
@@ -139,7 +139,7 @@ const setReset = () => {
 	document.getElementById("milliseconds").innerHTML = "00";
 	document.getElementById("seconds").innerHTML = "00";
 	document.getElementById("minutes").innerHTML = "00";
-	document.getElementById("start-stop").innerHTML = "start";
+	document.getElementById("start-stop").innerHTML = "START";
 	document.getElementById("laps-count").innerHTML = " ";
 	document.getElementById("laps-total-time").innerHTML = " ";
 	document.getElementById("laps-time").innerHTML = " ";
